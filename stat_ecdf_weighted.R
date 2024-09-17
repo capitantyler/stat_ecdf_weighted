@@ -89,5 +89,7 @@ StatEcdf <- ggproto("StatEcdf", Stat,
                     
                     default_aes = aes(y = stat(y)),
                     
-                    required_aes = c("x")
+                    required_aes = c("x"),
+
+                    dropped_aes = c("weight")
 )
